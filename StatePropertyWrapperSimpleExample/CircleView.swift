@@ -46,7 +46,7 @@ struct CircleView: View {
             Text("Area:")
                 .font(.title2)
             
-            Text("314.16 square units")
+            Text("\(area) square units")
             
             Spacer()
         }
