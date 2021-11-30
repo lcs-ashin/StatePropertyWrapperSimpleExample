@@ -28,19 +28,29 @@ struct CircleView: View {
             Text("Radius:")
                 .font(.title2)
             
-            // The syntax of $ says to use the propety, radius, and BIND it to this control.
-            // This means when the control changes, the property's value changes
-            Slider(value: $radius,
-                   in: 0.0...100.0,
-                   label: {
-                Text("Radius")
-            },
-                   minimumValueLabel: {
-                Text("0.0")
-            },
-                   maximumValueLabel: {
-                Text("100.0")
-            })
+            Group {
+                
+                // Show the selected radius value
+                HStack {
+                    Spacer()
+                    Text("\(radius)")
+                    Spacer()
+                }
+                
+                // The syntax of $ says to use the propety, radius, and BIND it to this control.
+                // This means when the control changes, the property's value changes
+                Slider(value: $radius,
+                       in: 0.0...100.0,
+                       label: {
+                    Text("Radius")
+                },
+                       minimumValueLabel: {
+                    Text("0.0")
+                },
+                       maximumValueLabel: {
+                    Text("100.0")
+                })
+            }
             
             // Output
             Text("Area:")
