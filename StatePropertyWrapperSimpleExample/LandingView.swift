@@ -22,6 +22,12 @@ struct LandingView: View {
                 }, label: {
                    Text("Trapezoid")
                 })
+                
+                NavigationLink(destination: {
+                    CylinderView()
+                }, label: {
+                   Text("Cylinder")
+                })
             }
             .foregroundColor(.black)
             .font(.title2.bold())
