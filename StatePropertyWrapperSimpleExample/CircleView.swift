@@ -11,7 +11,7 @@ struct CircleView: View {
     // MARK: Stored Properties
     // @State is a "property wrapper"
     // "radius" is still just a property of the structure
-    // Th eproperty wrapper alerts SwiftUI to the fact
+    // The property wrapper alerts SwiftUI to the fact
     // that we want changes to this property to show in the UI.
     @State var radius: Double = 10.0
     
